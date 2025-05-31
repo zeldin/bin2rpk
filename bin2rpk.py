@@ -115,12 +115,12 @@ class Cartridge:
             if not path.exists():
                 return None
         if target == BinfileType.C:
-            self.cname = path.name
+            # self.cname = path.name
             self.bankinghint = get_bankinghint(path.name)
-        elif target == BinfileType.D:
-            self.dname = path.name
-        elif target == BinfileType.G:
-            self.gname = path.name
+        # elif target == BinfileType.D:
+        #     self.dname = path.name
+        # elif target == BinfileType.G:
+        #     self.gname = path.name
         print("Loading %s" % (path,))
         return path.read_bytes()
 
