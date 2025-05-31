@@ -147,7 +147,7 @@ class Cartridge:
         if self.mainbin[3] in {ord('R'), ord('G'), ord('X')}:
             raise RuntimeError("FinalGROM advanced modes not supported")
         if paged is not None:
-            self.pcbtype = paced_pcbs[paged]
+            self.pcbtype = paged_pcbs[paged]
         else:
             if needs_gromemul(self.gbin):
                 print("Selected pcbtype gromemu because of 8K/GROM data")
