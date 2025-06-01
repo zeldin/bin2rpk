@@ -10,7 +10,7 @@ from collections import defaultdict
 from enum import Enum, auto
 
 paged_pcbs = {'7': "paged7", '12k': "paged12k", '16k': "paged",
-              '377': "paged377", '378': "paged378", '379': "paged379i"}
+              '377': "paged377", '378': "paged378", '379i': "paged379i"}
 
 
 class BinfileType(Enum):
